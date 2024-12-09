@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.grid {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.node {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animation */
+}
+
+.node:hover {
+  transform: scale(1.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.node.start {
+  background-color: #00f;
+}
+
+.node.goal {
+  background-color: #0f0;
+}
+
+.node.visited {
+  background-color: #ffd001;
+}
+
+.node.wall {
+  background-color: #000000;
+}
